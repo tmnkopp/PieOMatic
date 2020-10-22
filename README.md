@@ -1,8 +1,8 @@
 # PieOMatic
-### what
+## what
 Pie-O-Matic
 
-### why
+## why
 python code generation and scaffolding util
 
 ## how
@@ -16,5 +16,18 @@ python code generation and scaffolding util
 
     use snippets.txt to configure custom templates
     
+    templates are %% delimited 
+    models are key value replacements using $0 $1
+    
 3. run main.py
  
+#1.1 release notes
+compiles df column lists into models 
+more compilers to come
+df.columns
+
+Index(['Age', 'Income','Job', 'Degree', 'Major'],
+      dtype='object')
+      
+      
+
