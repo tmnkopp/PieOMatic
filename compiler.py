@@ -1,5 +1,4 @@
 import re
-from context import ConfigProvider 
 class PyCompiler:
     def __init__(self, context):
         self._ctx = context
@@ -12,6 +11,7 @@ class PyCompiler:
                     key = key.replace(char,'')        
             d[key] = col_name.replace('\'','').replace('  ','').strip()
         return d        
+    
 class ColumnCompiler(PyCompiler):
     def __init__(self, context): 
         PyCompiler.__init__(self, context)
@@ -23,8 +23,8 @@ class ColumnCompiler(PyCompiler):
         model = mtch.group(1).split(',')
         d = self.dict_from_model(model) 
         s= '' 
-        t = open(self._ctx.snippets) 
-        snips = t.read().split('%%')
+        t = open(self._ctx.snippets)  
+        snips = ('\n' + t.read()).split('\n%%')
         for snip in snips:
             s+='\n'
             for k in d:
