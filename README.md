@@ -1,5 +1,4 @@
 # PieOMatic
-## what
 Pie-O-Matic
 
 ## why
