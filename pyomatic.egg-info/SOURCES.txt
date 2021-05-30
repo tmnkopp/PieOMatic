@@ -4,6 +4,7 @@ pyomatic/Main.py
 pyomatic/__init__.py
 pyomatic/codegen.py
 pyomatic/compiler.py
+pyomatic/config.json
 pyomatic/context.py
 pyomatic/converters.py
 pyomatic.egg-info/PKG-INFO
@@ -12,3 +13,4 @@ pyomatic.egg-info/dependency_links.txt
 pyomatic.egg-info/top_level.txt
 pyomatic/bin/pom.py
 pyomatic/bin/pom.py
+pyomatic/data/snippets.txt
